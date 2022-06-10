@@ -38,4 +38,4 @@ root                    (project root folder)
  Shane Fowles  (fow21010@byui.edu)
  Irvin Silva   (irvinjose.silva@gmail.com)
  Jordan        (cap21014@byui.edu)
- Samuel        (bla@buyi.edu)
+ 
