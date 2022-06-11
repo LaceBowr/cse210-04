@@ -31,10 +31,6 @@ class Keyboard_service:
   
         return dx,dy
 
-    def new_direction(self):
-        #records the new changes made
-        move = self.dx * pyray.is_key_down(pyray.KEY_LEFT) or self.dx * pyray.is_key_down(pyray.KEY_RIGHT)
-        self.dx = 30 + move
-        return self.dx,self.dy
+    
 
 
