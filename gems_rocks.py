@@ -21,3 +21,17 @@ class Symbol():
             return self.colors.white_color()
         if self.color == 'gray':
             return self.colors.gray_color()
+        
+class Gem(Symbol):
+    def __init__(self, x, y):
+        super().__init__(x, y, 'red', '*')
+
+    def get_score(self):
+       return 1
+
+class Rock(Symbol):
+    def __init__(self, x, y):
+        super().__init__(x, y, 'white', 'o')
+
+    def get_score(self):
+       return -1
