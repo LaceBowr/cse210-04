@@ -20,6 +20,7 @@ class Keyboard_service:
         Returns:
             Point: The selected direction.
         """
+        dx = 0
         if pyray.is_key_down(pyray.KEY_LEFT):
             dx = -1
         
@@ -29,12 +30,4 @@ class Keyboard_service:
         dx,dy = self.new_direction()# = (dx,dy)
         #self.new_direction == get_direction(dx,dy) 
   
-        return dx,dy
-
-    def new_direction(self):
-        #records the new changes made
-        move = self.dx * pyray.is_key_down(pyray.KEY_LEFT) or self.dx * pyray.is_key_down(pyray.KEY_RIGHT)
-        self.dx = 30 + move
-        return self.dx,self.dy
-
-
+        return dx
