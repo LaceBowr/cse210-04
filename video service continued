@@ -1,13 +1,1 @@
-    def _set_position(self, position):
-        self._set_position = position
-    
-    def _set_score(self, score):
-        print(f'Score:{score}')
-        
-    def close_window(self):
-        pyray.close_window()
-    
-    def character_move(self):
-        #sets gems/rocks and the player's hit/move_at_end_position to the screen
-        (self.dx,self.dy)
-        return self.dx, self.dy
+  
