@@ -61,3 +61,14 @@ class VideoService():
                 self.white = -1
                 return True
         return False
+
+    def character_move(self):
+        #sets gems/rocks and the player's hit/move_at_end_position to the screen
+        (self.dx,self.dy)
+        return self.dx, self.dy
+
+    def set_score(self, score): 
+        print(f'SCORE:{score}')
+
+    def close_window(self):
+        pyray.close_window()
