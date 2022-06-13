@@ -19,3 +19,12 @@ class Colors():
 
     def allowed_colors(self):
         return ['red', 'white', 'gray']
+    
+    def red_color(self):
+        return self.red
+
+    def white_color(self):
+        return self.white
+
+    def gray_color(self):
+        return self.gray 
