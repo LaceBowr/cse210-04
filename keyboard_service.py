@@ -13,7 +13,7 @@ class Keyboard_service:
         self._cell_size=cell_size
         self.dx=0
         self.dy=0
- def get_direction(self):
+    def get_direction(self):
         #takes input done by character in play and implements a move
         """Gets the selected direction based on the currently pressed keys.
 
