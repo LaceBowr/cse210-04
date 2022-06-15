@@ -1,11 +1,11 @@
-from pyray import draw_grid
-from keyboard_services import KeyboardService
+from gems_rocks import Gem, Rock
+from character import Character
 
 class Symbols():
     symbols = []
     def __init__(self):
-        star_positions = [(13,3),(23,5),(33,8),(4,7),(8,11),(5,15),(11,16),(39,39),(28,31),(59,30),(57,32),(52,25),(55,27),(53,29),(51,30)]
-        oh_positions = [(2,2),(6,4),(10,6),(15,9),(5,10),(14,12),(4,14),(22,17),(21,21),(24,22),(58,26),(56,35),(49,31),(54,22),(56,12)]
+        gem_positions = [(13,3),(23,5),(33,8),(4,7),(8,11),(5,15),(11,16),(39,39),(28,31),(59,30),(57,32),(52,25),(55,27),(53,29),(51,30)]
+        rock_positions = [(2,2),(6,4),(10,6),(15,9),(5,10),(14,12),(4,14),(22,17),(21,21),(24,22),(58,26),(56,35),(49,31),(54,22),(56,12)]
         self.symbols.append(Symbol(Character(30,39))
         for rock in rock_positions:
             self.symbols.append(Rock(Rock[0]),rock[1]))
