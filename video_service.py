@@ -67,8 +67,11 @@ class VideoService():
         (self.dx,self.dy)
         return self.dx, self.dy
 
-    def set_score(self, score): 
-        print(f'SCORE:{score}')
+    def set_score(self,score):
+        #print(f'SCORE:{score}') 
+        pyray.begin_drawing()
+        pyray.draw_text(f'Score: {score}',20,100,16,pyray.WHITE)
+        pyray.end_drawing
 
     def close_window(self):
         pyray.close_window()
