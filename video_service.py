@@ -49,10 +49,13 @@ class VideoService():
         cellx, celly = self.cell_size()
         for symbol in symbols.symbols:
             pyray.draw_text(symbol.text, symbol.x*cellx, symbol.y*celly, cellx-2, symbol.get_display_color())
+        pyray.draw_text(f'Score: {self.score}', 20, 100, 16, pyray.WHITE)
         pyray.end_drawing()
 
     def game_running(self):
-        return not raylib.WindowShouldClose()
+        if raylib.WindowShouldClose() or self.score < 0:
+            return False
+        return True
 
     def player_hit_results(self, player, symbol, red, white):
         if (player.x,player.y) == (symbol.x,symbol.y):
