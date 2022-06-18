@@ -1,7 +1,7 @@
 import pyray
 # Need to import the horizontal and vertical position to work
 
-class Keyboard_service:
+class KeyboardService:
     """Detects player input. 
     
     The responsibility of the Keyboard_services class is to detect player key presses and translate them into 
@@ -26,8 +26,5 @@ class Keyboard_service:
         
         if pyray.is_key_down(pyray.KEY_RIGHT):
             dx = 1
-
-        dx,dy = self.new_direction()# = (dx,dy)
-        #self.new_direction == get_direction(dx,dy) 
-  
+ 
         return dx

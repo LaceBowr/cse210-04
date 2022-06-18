@@ -1,4 +1,4 @@
-   from gems_rocks import Symbol, Gem, Rock
+from gems_rocks import Symbol, Gem, Rock
 
 class Character(Symbol):
     score = 0

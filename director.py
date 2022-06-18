@@ -1,4 +1,4 @@
-from keyboard_services import KeyboardService
+from keyboard_service import KeyboardService
 from video_service import VideoService
 from character import Character
 from symbols import Symbols

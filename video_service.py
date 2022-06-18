@@ -1,5 +1,5 @@
+
 import pyray
-import raylib
 
 class VideoService():
     '''Outputs the game onto the screen by using the keyboard_services input.'''
@@ -53,7 +53,7 @@ class VideoService():
         pyray.end_drawing()
 
     def game_running(self):
-        if raylib.WindowShouldClose() or self.score < 0:
+        if pyray.window_should_close() or self.score < 0:
             return False
         return True
 
